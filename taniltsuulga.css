@@ -117,14 +117,14 @@ hr{
     
 }
 #goal-vision #goal{
-    background: url('../web_pic/ta_alsyn_haraa.JPG') no-repeat center /cover;
+    background: url('/web_pic/ta_alsyn_haraa.JPG') no-repeat center /cover;
     float: left;
     width: 44%;
     border-radius: 25px;
     margin-left: 20px;
 }
 #goal-vision #vision{
-    background: url('../web_pic/ta_zorilgo.jpg') no-repeat center /cover;
+    background: url('web_pic/ta_zorilgo.jpg') no-repeat center /cover;
     float: right;
     width: 44%;
     border-radius: 25px;
