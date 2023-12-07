@@ -1,6 +1,11 @@
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+menu.addEventListener("click", () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle("open");
+});
+
 const params = new URLSearchParams(document.location.search);
 const par = params.get("category");
 
@@ -13,19 +18,18 @@ async function fetchJSON() {
     return data;
 }
 
-menu.addEventListener("click", () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle("open");
-});
+// menu.addEventListener("click", () => {
+//     menu.classList.toggle('bx-x');
+//     navbar.classList.toggle("open");
+// });
 
 
 class Product {
     constructor(product) {
         this.image = product.image
-        this.name = product.name;
-        this.desc = product.desc;
+        this.name = product.Name;
+        this.desc = product.Description;
         this.price = product.price;
-
     }
 
     RenderAll() {
