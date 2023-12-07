@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movie Review site's Movies page.">
+    <meta name="keywords" content="Filter, Movies, Page count">
+    <meta name="author" content="BET">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+
+    <link rel="stylesheet" href="HF.css">
+
+    <title>TOUS LES JOURS - HOME</title>
+    <style>
+        label {
+            width:500px;
+            height:200px;
+            position: relative;
+            display: block;
+            background: #ebebeb;
+            border-radius: 200px;
+            box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+        }
+        label:after{
+            content: "";
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: linear-gradient(180deg,#ffcc89,#d8860b);
+            border-radius: 180px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <a href="homee.html" ><figure><img id="logo_pic" src="web_pic/logo4.png" alt="tous_les_jours_logo" width="230" height="30"></figure></a>
+
+        <section>
+            <ul class="navbar">
+                <li><a href="taniltsuulga.html">Танилцуулга</a></li>
+                <li><a href="buteegdhuun.html">Бүтээгдэхүүн</a></li>
+                <li><a href="medee.html">Мэдээ</a></li>
+            </ul>  
+        </section>
+          
+
+        <section class="main">
+            <!-- <i class='bx bxs-shopping-bag'></i> -->
+            <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart" width="31" height="30">
+            <span class="quantity">0</span>
+
+            <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location" width="20" height="31">Салбар</a>
+
+            <article class="bx bx-menu" id="menu-icon"> </article>
+        </section>    
+    </header>
+    <div class="listbla"></div>
+
+
+    <main>
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle"></label>
+    </main>
+
+    <!-- <div>
+        <section class="card">
+            <h1>Сагс</h1>
+            <ul class="ListCard"></ul>
+            <article class="checkout">
+                <figure class="total">0</figure>
+                <figure class="closecard">Close</figure>
+            </article>
+        </section>
+    </div> -->
+
+        <!-- <main>
+            <section>
+                <p>Салбарын мэдээлэл</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85590.8268715188!2d106.76025909726563!3d47.903233400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693b44e6cd2dd%3A0x8e753c1184fec2a5!2sTous%20Les%20Jours!5e0!3m2!1smn!2smn!4v1697645010076!5m2!1smn!2smn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+            <section>
+                <h2>Салбарууд</h2>
+                <article>
+                    <figure><img src="web_pic/salbar_Huuhdyn_100.jpg" alt="salbar_Huuhdyn_100"></figure>
+                    <h3>Салбарын нэр</h3>
+                    <p>Ажлын цаг: <time>08:00</time>-аас <time>22:00 </time>Өдөр бүр</p>
+                    <p>Утас:99999999</p>
+                    <p>Багтаамж</p>
+                    <p>Ойролцоо газрууд</p>
+                </article>
+                <article>
+                    <figure><img src="web_pic/salbar_Huuhdyn_100.jpg" alt="salbar_Huuhdyn_100"></figure>
+                    <h3>Салбарын нэр</h3>
+                    <p>Ажлын цаг:<time>08:00-22:00</time>өдөр бүр</p>
+                    <p>Утас:99999999</p>
+                    <p>Багтаамж</p>
+                    <p>Ойролцоо газрууд</p>
+                </article>
+                <article>
+                    <figure><img src="web_pic/salbar_Huuhdyn_100.jpg" alt="salbar_Huuhdyn_100"></figure>
+                    <h3>Салбарын нэр</h3>
+                    <p>Ажлын цаг:<time>08:00-22:00</time>өдөр </p>
+                    <p>Утас:99999999</p>
+                    <p>Багтаамж</p>
+                    <p>Ойролцоо газрууд</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <section class="social_address">
+                <address id="social_feedback">
+                <ul id="socials">
+                    <li><a href="https://www.facebook.com/TousLesJoursMongolia"><figure><img src="web_pic/logo_fb.png" alt="facebook" width="30" height="30"></figure></a></li>
+                    <li><a href="https://www.instagram.com/touslesjoursmn/"><figure><img src="web_pic/logo_ig.png" alt="instagram" width="30" height="30"></figure></a></li>
+                    <li><a href="https://twitter.com/tljmn?lang=en"><figure><img src="web_pic/logo_tw.png" alt="twitter" width="30" height="30"></figure></a></li>
+                </ul>
+                </address>
+    
+                <article id="feedback">
+                    <a href="homee.html">Хүний нөөц</a>
+                    <a href="homee.html">Санал хүсэлт</a>
+                </article>
+                
+            </section>
+            <hr>
+            <section class="address">
+                <address id="adds">
+                    <ul class="bla">
+                        <li><img src="web_pic/icons_branch.png" alt="branch" width="24" height="24"><p>Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж, Хүннү 2222 хороолол</p></li>
+                        <li><img src="web_pic/icons_mail.png" alt="mail" width="24" height="24"><p>info@tlj.mn</p></li>
+                        <li><img src="web_pic/icons_phone.png" alt="phone_num" width="24" height="24"><p>(976) 7575-7510</p></li>
+                    </ul>
+                </address>
+                <p id="text">©2022 - АРТИЗАН ХХК. БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН</p>
+        </footer> -->
+    </body>
+</html>

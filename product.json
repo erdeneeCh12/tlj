@@ -1,0 +1,169 @@
+[
+    {
+        "cat": "bread",
+        "prods": [
+            {
+                "Name": "Raisin bread",
+                "image": "web_pic/Product/bread1.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "7900₮"
+            },
+            {
+                "Name": "Potato cheese bread",
+                "image": "web_pic/Product/bread2.jpg",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "5900₮"
+            },
+            {
+                "Name": "Buttercream Bread",
+                "image": "web_pic/Product/bread3.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Multi-Grain Pan Bread",
+                "image": "web_pic/Product/bread4.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "6900₮"
+            }
+        ]
+    },
+    
+    { 
+        "cat": "cake",
+        "prods": [
+            {
+                "Name": "Cloud cake2",
+                "image": "web_pic/Product/cake1.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "71900₮"
+            },
+            {
+                "Name": "Red Velvet",
+                "image": "web_pic/Product/cake2.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "72900₮"
+            },
+            {
+                "Name": "Cheese Cake",
+                "image": "web_pic/Product/cake3.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "73900₮"
+            },
+            {
+                "Name": "Blueberry Yogurt Cake",
+                "image": "web_pic/Product/cake4.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "74900₮"
+            },
+            {
+                "Name": "Chocolate Cake",
+                "image": "web_pic/Product/cake5.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "75900₮"
+            },
+            {
+                "Name": "Party Cake",
+                "image": "web_pic/Product/cake6.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "76900₮"
+            },
+            {
+                "Name": "Cloud Piece Cake",
+                "image": "web_pic/Product/cake7.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "8900₮"
+            },
+            {
+                "Name": "Chocolate Piece Cake",
+                "image": "web_pic/Product/cake8.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            }
+        ]
+    },
+
+    {
+        "cat": "pastry",
+        "prods": [
+            {
+                "Name": "Fruit Pastry",
+                "image": "web_pic/Product/pastry1.jpg",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "5900₮"
+            },
+            {
+                "Name": "Strawberry Croissant",
+                "image": "web_pic/Product/pastry2.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "6900₮"
+            },
+            {
+                "Name": "Yuzu Pie",
+                "image": "web_pic/Product/pastry3.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "5900₮"
+            },
+            {
+                "Name": "Caramel Apple Pie",
+                "image": "web_pic/Product/pastry4.png",
+                "Description": "Cloud cream[heavy cream(milk), whipped cream, sugar]",
+                "price": "6900₮"
+            }
+        ]
+    },
+
+    {
+        "cat": "beverages",
+        "prods": [
+            {
+                "Name": "Mocha Frappe",
+                "image": "web_pic/Product/beve1.png",
+                "Description": "Mocha Frappe[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Mango smoothie",
+                "image": "web_pic/Product/beve2.png",
+                "Description": "Mango smoothie[heavy cream(milk), whipped cream, sugar]",
+                "price": "75900₮"
+            },
+            {
+                "Name": "Matcha Frappe",
+                "image": "web_pic/Product/beve3.png",
+                "Description": "Matcha Frappe[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Strawberry smoothie",
+                "image": "web_pic/Product/beve4.png",
+                "Description": "Strawberry smoothie[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Iced Green tea",
+                "image": "web_pic/Product/beve5.png",
+                "Description": "Iced Green tea[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Iced Black tea",
+                "image": "web_pic/Product/beve6.png",
+                "Description": "Iced Black tea[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Matcha Latte",
+                "image": "web_pic/Product/beve7.png",
+                "Description": "Matcha Latte[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            },
+            {
+                "Name": "Chamomile tea",
+                "image": "web_pic/Product/beve8.png",
+                "Description": "Chamomile tea[heavy cream(milk), whipped cream, sugar]",
+                "price": "9900₮"
+            }
+        ]
+    }
+]

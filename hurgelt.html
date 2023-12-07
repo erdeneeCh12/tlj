@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tous les jours model site.">
+    <meta name="keywords" content="Bakery, Cake, products">
+    <meta name="author" content="BET">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+
+    <link rel="stylesheet" href="delivery_style.css">
+    <link rel="stylesheet" href="HF.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>TOUS LES JOURS - DELIVERY</title>
+</head>
+<body>
+
+    <header class="container">
+        <a href="homee.html" ><figure><img id="logo_pic" src="web_pic/logo4.png" alt="tous_les_jours_logo" width="230" height="30"></figure></a>
+
+        <section>
+            <ul class="navbar">
+                <li><a href="taniltsuulga.html">Танилцуулга</a></li>
+                <li><a href="buteegdhuun.html">Бүтээгдэхүүн</a></li>
+                <li><a href="medee.html">Мэдээ</a></li>
+            </ul>  
+        </section>
+          
+
+        <section class="main">
+            <!-- <i class='bx bxs-shopping-bag'></i> -->
+            <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart">
+            <span class="quantity">0</span>
+
+            <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
+
+            <article class="bx bx-menu" id="menu-icon"> </article>
+        </section>    
+    </header>
+
+        <main class="body">
+
+                    <section class="list">
+                        <h1>Захиалах бүтээгдэхүүн</h1>
+                        <article class="stack">
+                            <figure><img src="web_pic/protype_cake1.png" alt="бүтээгдэхүүн"></figure>
+                            <figure class="laive">
+                                <p>Cloud cake</p>
+                                <p>x2</p>
+                                <p>75900</p>
+                            </figure>        
+                        </article>
+                        <hr>
+                        <article class="amount">
+                            <p>Нийт үнэ</p>
+                            <p>151800</p>
+                        </article>
+                    </section>
+
+                    
+                
+                    <section class="sidebar" >
+                        <article>
+                            <h1>Мэдээлэл</h1>
+                            <h1>Хаяг</h1>
+                            <h1>Төлбөр</h1>
+                        </article>
+
+                        <section class="info inactive">
+                            <form  class="form" action="hurgelt.html">
+                                <p>Та мэдээллээ оруулна уу.</p>
+                                <label class="space" for="name">Харилцагчийн нэр: </label>
+                                <input type="text" id="name" name="name">
+                           
+                                <label class="space" for="email">Цахим шууд: </label>
+                                <input type="email" id="email" name="email">
+                                  
+                                <label class="space" for="phone">Утасны дугаар: </label>
+                                <div>
+                                    <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" required>
+                                    <input class="btn" type="submit" value="Код илгээх">
+                                </div>
+                                    
+                                <label class="space" for="pass">Баталгаажуулах код: </label>
+                                <div> 
+                                    <input  type="number" id="pass" name="pass" min="0" max="9">
+                                    <input  type="number" id="pass" name="pass" min="0" max="9">
+                                    <input  type="number" id="pass" name="pass" min="0" max="9">
+                                    <input  type="number" id="pass" name="pass" min="0" max="9">
+    
+                                    <input class="btn " id="pass" type="submit" value="Баталгаажуулах" >
+                                </div>
+                                    
+                                <input class="btn next" id="pass" type="button" value="Үргэлжлүүлэх" >
+                            </form>
+                        </section>
+
+                        <!-- <section class="info">
+                            <form  class="form" action="hurgelt.html">
+                                <legend>-------  Та мэдээллээ оруулна уу.  -------</legend>
+                                    <p>
+                                        <label class="space" for="name">Харилцагчийн нэр: </label>
+                                        <input type="text" id="name" name="name">
+                                    </p>
+    
+                                    <p>
+                                        <label class="space" for="email">Цахим шууд: </label>
+                                        <input type="email" id="email" name="email">
+                                    </p>
+                                    
+                                    <p>
+                                        <label class="space" for="phone">Утасны дугаар: </label>
+                                    <div>
+                                        <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" required>
+                                        <input class="btn" type="submit" value="Код илгээх">
+                                    </div>
+                                    </p>
+                                    
+                                    <p>
+                                        <label class="space" for="pass">Баталгаажуулах код: </label>
+                                            <div> 
+                                                <input  type="number"  name="pass" min="0" max="9">
+                                                <input  type="number"  name="pass" min="0" max="9">
+                                                <input  type="number"  name="pass" min="0" max="9">
+                                                <input  type="number"  name="pass" min="0" max="9">
+    
+                                                <input class="btn " type="submit" value="Баталгаажуулах" >
+                                            </div>
+                                    </p>
+     
+                                   <p>
+                                    <input class="btn next" type="button" value="Үргэлжлүүлэх" >
+                                   </p>
+                            </form>
+                        </section> -->
+        
+
+                        <section class="lsaddress">
+                            <form class="form" action="hurgelt.html">
+                                <p>Хүргүүлэх хаягаа оруулна уу.</p>
+                                <label class="space" for="duureg"> Дүүрэг:</label>
+                                <input type="text" id="duureg" name="duureg">
+
+                                <label class="space" for="horoo"> Хороо:</label>
+                                <input type="text" id="horoo" name="horoo">
+
+                                <label class="space" for="toot"> Байр, Орц, Тоот:</label>
+                                <input type="text" id="toot" name="toot">
+
+                                <label class="space" for="nemelt"> Нэмэлт:</label>
+                                <input type="textarea" id="nemelt" name="nemelt">
+
+                                <input class="btn next" id="nemelt" type="button" value="Үргэлжлүүлэх" >
+                            </form>
+                        </section>
+        
+                        
+                        <section class="payment inactive">
+                            <form class="form" action="hurgelt.html">
+                                <p>НӨАТ авах хэлбэр</p>
+                                <label for="huvi_hun">Хувь хүн</label>
+                                <input type="radio" id="huvi_hun" name="noat" value="huvi_hun">
+                                <label for="baiguullaga">Байгууллага</label>
+                                <input type="radio" id="baiguullaga" name="noat" value="baiguulga">
+                                
+
+                                <p>Төлбөрийн хэлбэр</p>
+                                <label for="paycart">Карт</label>
+                                <input type="radio" id="paycart" name="pay" value="paycart">
+                                <label for="qpay">Qpay</label>
+                                <input type="radio" id="qpay" name="pay" value="qpay">
+                                <label for="Socialpay">Socialpay</label>
+                                <input type="radio" id="Socialpay" name="pay" value="Socialpay">
+                                
+                                <input class="btn next"  id="paycart" type="button" value="Төлөх" >
+                            </form>
+                        </section>
+                        
+                    </section>
+                    
+        </main>
+
+
+        <footer>
+            <section class="social_address">
+                <address id="social_feedback">
+                <ul id="socials">
+                    <li><a href="https://www.facebook.com/TousLesJoursMongolia"><figure><img src="web_pic/logo_fb.png" alt="facebook" width="30" height="30"></figure></a></li>
+                    <li><a href="https://www.instagram.com/touslesjoursmn/"><figure><img src="web_pic/logo_ig.png" alt="instagram" width="30" height="30"></figure></a></li>
+                    <li><a href="https://twitter.com/tljmn?lang=en"><figure><img src="web_pic/logo_tw.png" alt="twitter" width="30" height="30"></figure></a></li>
+                </ul>
+                </address>
+    
+                <article id="feedback">
+                    <a href="homee.html">Хүний нөөц</a>
+                    <a href="homee.html">Санал хүсэлт</a>
+                </article>
+    
+            </section>
+            <hr>
+            <section class="address">
+                <address id="adds">
+                    <ul class="bla">
+                        <li><img src="web_pic/icons_branch.png" alt="branch" width="24" height="24"><p>Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж, Хүннү 2222 хороолол</p></li>
+                        <li><img src="web_pic/icons_mail.png" alt="mail" width="24" height="24"><p>info@tlj.mn</p></li>
+                        <li><img src="web_pic/icons_phone.png" alt="phone_num" width="24" height="24"><p>(976) 7575-7510</p></li>
+                    </ul>
+                </address>
+                <p id="text">©2022 - АРТИЗАН ХХК. БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН</p>
+        </footer>
+
+        <script src="delivery_script.js"></script>
+</body>
+</html>
