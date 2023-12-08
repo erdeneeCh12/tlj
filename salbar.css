@@ -38,11 +38,16 @@ a{
     text-align: center;
     justify-self: center;
     align-self: center;
-} */
+} */ 
 
 .salbar_menu{
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     padding: 30px 0;
+    & h2{
+        text-align: center;
+    }
 }
 .salbar_menu_box{
     justify-content: space-evenly;
@@ -73,9 +78,11 @@ a{
     
  
 }
-.salbar_menu h2{
-  margin-left: 70px;
-}
+/* .salbar_menu h2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
 .salbar_ner{
     text-align: center;
     margin-bottom: 20px;
