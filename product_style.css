@@ -105,3 +105,21 @@ nav ul li{
         & p{text-align: center;}
     } 
 }
+
+@media all and (max-width: 960px){
+    nav {margin-top: 61px;}
+    .cake{
+        grid-template-columns: auto auto;
+        & article {width: 30vw;}
+        & img {width: 29.6vw;}
+    }
+}
+
+@media all and (max-width: 450px){
+    nav {margin-top: 56px;}
+    .cake{
+        grid-template-columns: auto;
+        & article {width: 60vw;}
+        & img {width: 59.5vw;}
+    }
+}
