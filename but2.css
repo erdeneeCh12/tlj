@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+* {
+    
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #186049;
+    --text-color: #fefefe;
+    
+    --pro-color: #AD8558;
+    --protext-color: #eddfca;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+main{
+    width:75%;
+    margin:auto;
+    margin-top: 8%; 
+}
+.item_page{
+    display:flex;
+}
+#item{
+    width:42%; 
+    margin-top: 5%;
+}
+#product-image img{
+    width: 100%;
+    height: 28vw;
+    border-radius: 3%;
+}
+
+
+/* add button */
+#price-add{
+    display: flex;
+    border: 1px black solid;
+    border-radius: 3vh;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+#price-add p{
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    padding-top: 5px;
+}
+#price-add button{
+    width: 50%;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    border: none;
+    color: white; 
+    font-size: 18px;
+}
+#price-add button:active{
+    background-color:#0b3124 ;
+        color: rgb(133, 128, 128);
+}
+
+.c0ontainer{
+    width:45%;
+    margin-left:10%;
+    
+}
+#product-information h2{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.div{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.div p{
+    line-height: 30px;
+    border: 0.5px solid black;
+    padding: 7px 0px;
+    padding-left: 10px;
+    border-left: none; 
+    border-bottom: none;
+}
+
+p.items_1 {
+    border-right: none;
+}
+
+#allergens-icons{
+    display: flex;
+    margin: 30px 0px;
+    margin-bottom: 50px;
+    width: 2vw;
+    height: 3vw;
+    
+}
+#allergens-icons  img{
+    padding-left: 3vw;
+    color:#AD8558
+}
+#allergens hr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#allergens h3{
+    margin-top: 40px;
+}
+#entrance{
+    text-align: justify;
+
+}
+#allergens p{
+    line-height: 25px;
+}
+#allergens span{
+    font-weight: bold;
+}
+#hr{
+    margin: 40px 0px;
+
+}
+#branch_title{
+    text-align: center;
+    margin: 40px 0px;
+}
+#b_add{
+    display: flex;
+    height: 500px;
+}
+#b_add map{
+    margin-left: 2%;
+   width: 48%;
+   border-radius: 5px;
+}
+#b_add map iframe{
+    width: 100%;
+    height: 500px;
+ }
+#branch_address{
+    overflow: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    border-radius: 15px;
+    border: 1;
+
+}
+#branch_address::-webkit-scrollbar{
+width: 0;
+}
+.branch{
+    margin-top: 35px;
+   
+}
+.branch p{
+    line-height: 30px;
+    & span{
+        padding: 5px 5px;
+        background-color: #64c2a1;
+        border-radius: 5px;
+        padding: 2px 5px;
+        color: white;
+    }
+}
+#hahah{
+    width: 30px ;
+    background-color: #186049;
+}
+.branch h4{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/*media queries*/
+
+
+@media (max-width: 750px) {
+    .item_page{
+        display: inline;
+    }
+    #item{
+        width: 100%;
+        padding-top: 10%;
+        
+    }
+    #allergens-icons{
+        display: flex;
+        margin: 30px 0px;
+        margin-bottom: 50px;
+        width: 6vw;
+        height: 8vw;
+        
+    }
+    #allergens-icons  img{
+        padding-left: 5vw;
+        color:#AD8558
+    }
+    #product-image img{
+        width: 80%;
+        margin-left: 8vw;
+        height: 58vw;
+        border-radius: 7%;
+    }
+    .container{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    #b_add{
+        display: inline;
+    }
+    #branch_address{
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+    #map{
+        
+        width: 100%;
+        height: 10vw;
+    }
+}
+
+
