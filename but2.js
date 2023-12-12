@@ -4,12 +4,12 @@ const apiUrl = "https://api.jsonbin.io/v3/b/657536ff0574da7622d2d050"
 // ene functionoor page ee shinechlene parameteree huleej avaad info haruulas section doo bicsn htmlee renderlesen 
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const animeId = urlParams.get("id");
+    const productID = urlParams.get("id");
     fetch(apiUrl).then(response => response.json()).then(data => {
-        let animes = data.record;
-        const Product = getAnimeById(animeId, animes);
-        const animeInfoSection = document.getElementById("renderAnimeInfo");
-        animeInfoSection.innerHTML = `
+        let products = data.record;
+        const Product = getProductById(productID, products);
+        const productInfoSection = document.getElementById("renderProductInfo");
+        productInfoSection.innerHTML = `
         <section class="item_page">
             <article id="item">
                 <figure id="product-image"><img src="${Product.image}" alt="Bread"></figure>
@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 });
 
-// enuuugeer jsonoo oosoo anime name r ni anime infogo avsan 
-function getAnimeById(animeId, list) {
+// enuuugeer jsonoo oosoo  productiin id-g haij avsan.
+function getProductById(productID, list) {
     for (let i = 0; i < list.length; i++) {
         for (let j = 0; j < list[i].prods.length; j++) {
-            if (list[i].prods[j].id == animeId) {
+            if (list[i].prods[j].id == productID) {
                 return list[i].prods[j];
             }
         }
