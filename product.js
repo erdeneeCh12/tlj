@@ -124,6 +124,6 @@ moveToProductDetailPage = function(id) {
     let currentURL = window.location.href;
     const urlParams2 = new  URL(window.location.href);
     let newUrl = urlParams2.origin;
-    newUrl += `/tlj/but2.html?id=${id}`
+    newUrl += `/tlj/but2.html?id=${id}`;
     window.location.href = newUrl;
   }
