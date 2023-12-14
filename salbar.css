@@ -67,6 +67,7 @@ button {
         border-color: var(--nav-color);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 3rem;
+        transition: transform 500ms;
         & h3 {
             font-size: 1rem;
             text-align: center;
@@ -83,6 +84,23 @@ button {
         object-fit: cover;
         object-position: center;
     }
+    & article:hover{
+        transform: translateY(-0.5rem);
+    }
+    /* & article:after{
+        content: "";
+        background-color: var(--text-color);
+        position: absolute;
+        height: 2.5px;
+        width: 0;
+        left: 0;
+        bottom: -12px;
+        transition: 0.3s;
+    }
+    & article:hover::after{
+        width: 100%;
+        align-self: center;
+    } */
 }
 
 @media all and (max-width: 960px) {
