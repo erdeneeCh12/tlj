@@ -19,7 +19,17 @@
 
     --ft-color: #0a291f;
     --noti-color: #red;
+
+    /* dark mode */
+    --background-color-light: #053007;
 }
+
+@media (prefers-color-scheme: light) {
+    body {
+      background-color: var(--background-color-light);
+      color: var(--text-color-light);
+    }
+  }
 
 a{
     color: var(--text-color);
