@@ -107,7 +107,27 @@ button{
         border-radius: 1rem;
     }
     & a {text-align: center;}
-    & article {margin: 0 0 7.5rem 0;}
+    & article {
+        margin: 0 0 7.5rem 0;
+        transition: transform 500ms;
+    }
+    & article:hover{
+        transform: translateY(-0.5rem);
+    }
+    & article:after{
+        content: "";
+        background-color: var(--text-color);
+        position: absolute;
+        height: 2.5px;
+        width: 0;
+        left: 0;
+        bottom: -12px;
+        transition: 0.3s;
+    }
+    & article:hover::after{
+        width: 100%;
+        align-self: center;
+    }
 }
 
 .news {
