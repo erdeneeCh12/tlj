@@ -332,10 +332,10 @@ a:after {
 
 }
 
-#adds ul li:hover {
+/* #adds ul li:hover {
     padding-top: 12px;
     color: #AD8558;
-}
+} */
 
 .bla li {
     display: grid;
