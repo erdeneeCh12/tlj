@@ -260,11 +260,16 @@ width: 0;
     body{
         background-color: #9b9a9a;
         & hr{border-color: var(--nav-color-dark);}
+    }
+    button {
+        background-color: var(--bg-color-dark);
         color: var(--text-color-dark);
+        border-width: 0;
     }
     a{color: var(--text-color-dark);}
     img{filter: brightness(65%);} 
-    
+    iframe{filter: brightness(65%);}
+    .branch span{background-color: var(--bg-color-dark);}
 }
 
 

@@ -463,6 +463,7 @@ button{
     button {
         background-color: var(--bg-color-dark);
         color: var(--text-color-dark);
+        border-width: 0;
     }
     .image-container {
         background: url('web_pic/backimg.jpg') center/cover no-repeat;
