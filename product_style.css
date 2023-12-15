@@ -162,6 +162,6 @@ nav ul li{
     button{
         background-color:var(--bg-color-dark);
         color: var(--text-color-dark);
-        border-width: 0;
+        border-color: #9b9a9a;
     }
 }
