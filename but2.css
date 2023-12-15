@@ -261,10 +261,9 @@ width: 0;
         background-color: #9b9a9a;
         & hr{border-color: var(--nav-color-dark);}
     }
-    button {
+    #price-add button{
         background-color: var(--bg-color-dark);
-        color: var(--text-color-dark);
-        border-color: #9b9a9a;
+        color: var(--text-color-dark); 
     }
     a{color: var(--text-color-dark);}
     img{filter: brightness(65%);} 
