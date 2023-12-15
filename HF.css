@@ -538,7 +538,9 @@ a:after {
     header{
         background-color: var(--bg-color-dark);
         & .navbar a{color: var(--text-color-dark);}
-        .main {
+        & .navbar .current a {color: #ffffff;}
+        & .navbar a:after {background-color: var(--text-color);}
+        & .main {
             & span{
                 background-color: var(--cartnoti-color-dark);
                 color: var(--text-color-dark);}
