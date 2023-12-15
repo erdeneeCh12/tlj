@@ -13,15 +13,28 @@
 :root {
     --bg-color: #186049;
     --text-color: #fefefe;
+    --cartnoti-color:#741717;
     
     --pro-color: #AD8558;
     --protext-color: #eddfca;
 
     --ft-color: #0a291f;
     --noti-color: #red;
+    --nav-color: #bebebe;
+    --navtext-color: #0a291f;
 
-    /* dark mode */
-    --background-color-light: #053007;
+    /* dark mode  */
+    --bg-color-dark: #113328;
+    --text-color-dark: #969494;
+    --cartnoti-color-dark:#440f0f;
+    
+    --pro-color-dark: #66543f;
+    --protext-color-dark: #7a5d32;
+
+    --ft-color-dark: #000000;
+    --noti-color-dark: #maroon;
+    --nav-color-dark: #525252;
+    --navtext-color-dark: #194134;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -429,5 +442,32 @@ button{
         article a img {
             margin-left: 50px;
         }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #9b9a9a;
+        & hr{border-color: var(--nav-color-dark);}
+        & .about{background-color: #9b9a9a;}
+        & .news{background-color: #9b9a9a;}
+        & .product{
+            background-color: var(--pro-color-dark);
+            color: var(--text-color-dark);
+            & a h2{color: var(--text-color-dark);}
+            & article:after{background-color: var(--text-color-dark); }
+        }
+    }
+    a{color: var(--text-color-dark);}
+    img{filter: brightness(65%);} 
+    button {
+        background-color: var(--bg-color-dark);
+        color: var(--text-color-dark);
+    }
+    .image-container {
+        background: url('web_pic/backimg.jpg') center/cover no-repeat;
+        filter: brightness(65%);
+        & h1{color: var(--text-color-dark);}
+        & p{color: var(--text-color-dark);}
     }
 }
