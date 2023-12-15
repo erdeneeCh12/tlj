@@ -538,8 +538,10 @@ a:after {
     header{
         background-color: var(--bg-color-dark);
         & .navbar a{color: var(--text-color-dark);}
-        & .navbar .current a {color: #ffffff;}
-        & .navbar a:after {background-color: var(--text-color);}
+        & .navbar a:hover {color: var(--text-color-dark);}
+        & .navbar .current a {color: var(--text-color-dark);}
+        & .navbar a:before {background-color: var(--text-color-dark);}
+        & .navbar a:after {background-color: var(--text-color-dark);}
         & .main {
             & span{
                 background-color: var(--cartnoti-color-dark);
