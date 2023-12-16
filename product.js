@@ -18,22 +18,14 @@ async function fetchJSON() {
     return data;
 }
 
-// menu.addEventListener("click", () => {
-//     menu.classList.toggle('bx-x');
-//     navbar.classList.toggle("open");
-// });
-
-
 class Product {
     constructor(product) {
         this.id = product.id;
         this.image = product.image;
         this.name = product.Name;
         this.desc = product.Description;
-        this.price = product.price
+        this.price = product.price;
     }
-
-
 
     RenderAll() {
         return `
@@ -57,13 +49,15 @@ class App {
     }
 
     async init() {
-        
+        // Display skeleton loading
+        this.showSkeletonLoading();
+
         const breadLi = document.getElementById("bread");
         const cakeLi = document.getElementById("cake");
         const pastryLi = document.getElementById("pastry");
         const beveLi = document.getElementById("beve");
 
-        switch(par){
+        switch (par) {
             case "bread":
                 breadLi.className = "active";
                 break;
@@ -81,49 +75,108 @@ class App {
         let products = await fetchJSON();
 
         let myhtml = "";
-        //all
+        // Render the actual product information
         if (!par) {
             for (const cat of products) {
-                myhtml += `<section class="cake">`
+                myhtml += `<section class="cake">`;
                 for (const buteegdehuun of cat.prods) {
                     const product = new Product(buteegdehuun);
                     console.log(buteegdehuun);
                     myhtml += product.RenderAll();
                 }
-                myhtml += "</section>"
+                myhtml += "</section>";
             }
-        }
-        //filter
-        else {
+        } else {
             let filteredProducts = products.filter((prod) => prod.cat == par);
 
             for (const cat of filteredProducts) {
-                myhtml += `<section class="cake">`
+                myhtml += `<section class="cake">`;
                 for (const buteegdehuun of cat.prods) {
                     const product = new Product(buteegdehuun);
                     myhtml += product.RenderAll();
                 }
-                myhtml += "</section>"
+                myhtml += "</section>";
             }
         }
 
+        // Replace the skeleton loading with actual product information
         const myapp = document.getElementById("myapp");
-        myapp.insertAdjacentHTML("afterbegin", myhtml);
+        myapp.innerHTML = myhtml;
+    }
 
+    showSkeletonLoading() {
+        const skeletonLoadingHTML = `
+        <div class="skeleton">
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
 
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+
+            <div class="article">
+                <div class="image loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text loading"></div>
+                <div class="text bottom loading"></div>
+            </div>
+        </div>
+        `;
+
+        const myapp = document.getElementById("myapp");
+        myapp.innerHTML = skeletonLoadingHTML;
     }
 }
 
 const app = new App();
 app.init();
-
-
-// enuuger but2-luu dataga url aar damjulad avn deer render dree onclick der ni zaagd ugcin
-moveToProductDetailPage = function(id) {
-    // console.log("hello");
-    let currentURL = window.location.href;
-    const urlParams2 = new  URL(window.location.href);
-    let newUrl = urlParams2.origin;
-    newUrl += `/tlj/but2.html?id=${id}`;
-    window.location.href = newUrl;
-  }
