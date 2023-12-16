@@ -245,6 +245,9 @@ footer {
         & .image {
             width: 29.6vw;
         }
+        & .text{
+            width: 27.5vw;
+        }
     }
 
 }

@@ -180,3 +180,13 @@ class App {
 
 const app = new App();
 app.init();
+
+// enuuger but2-luu dataga url aar damjulad avn deer render dree onclick der ni zaagd ugcin
+moveToProductDetailPage = function(id) {
+    // console.log("hello");
+    let currentURL = window.location.href;
+    const urlParams2 = new  URL(window.location.href);
+    let newUrl = urlParams2.origin;
+    newUrl += `/but2.html?id=${id}`;
+    window.location.href = newUrl;
+  }
