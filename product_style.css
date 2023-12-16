@@ -228,18 +228,25 @@ footer {
     nav {
         margin-top: 61px;
     }
-
     .cake {
         grid-template-columns: auto auto;
-
         & article {
             width: 30vw;
         }
-
         & img {
             width: 29.6vw;
         }
     }
+    .skeleton{
+        grid-template-columns: auto auto;
+        & .article {
+            width: 30vw;
+        }
+        & .image {
+            width: 29.6vw;
+        }
+    }
+
 }
 
 @media all and (max-width: 450px) {
@@ -255,6 +262,17 @@ footer {
         }
 
         & img {
+            width: 59.5vw;
+        }
+    }
+    .skeleton {
+        grid-template-columns: auto;
+
+        & .article {
+            width: 60vw;
+        }
+
+        & .image {
             width: 59.5vw;
         }
     }
@@ -293,6 +311,21 @@ footer {
                 color: var(--ft-color-dark);
             }
         }
+    }
+    .skeleton {
+        & .article {
+            border-color: #b0b0b0;
+            & .text {
+                background-color: #7a7a7a;
+                color: var(--ft-color-dark);
+            }    
+            & .image {
+                background-color: #7a7a7a;
+            }
+        }
+    }
+    .loading::before {
+        background: linear-gradient(to right, transparent, #8f8f8f, transparent);
     }
 
     img {
