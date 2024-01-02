@@ -16,36 +16,40 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
+     <script type="module" src="./component/productCart.js"></script>
+        <script type="module" src="./component/cartinfo.js"></script>
+        <script type="module" src="./component/addedProduct.js"></script>
+        <script type="module" src="/component/headerComp.js"></script>
+        <script type="module" src="/component/footerComp.js"></script>
+        <script type="module" src="/component/hurgeltComp.js"></script>
+        <script type="module" src="/component/hurgelt_add_comp.js"></script>
     <title>TOUS LES JOURS - DELIVERY</title>
 </head>
 <body>
 
-    <header class="container">
-        <a href="homee.html" ><figure><img id="logo_pic" src="web_pic/logo4.png" alt="tous_les_jours_logo" width="230" height="30"></figure></a>
-
-        <section>
-            <ul class="navbar">
-                <li><a href="taniltsuulga.html">Танилцуулга</a></li>
-                <li><a href="buteegdhuun.html">Бүтээгдэхүүн</a></li>
-                <li><a href="medee.html">Мэдээ</a></li>
-            </ul>  
-        </section>
-          
-
-        <section class="main">
-            <!-- <i class='bx bxs-shopping-bag'></i> -->
-            <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart">
-            <span class="quantity">0</span>
-
-            <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
-
-            <article class="bx bx-menu" id="menu-icon"> </article>
-        </section>    
-    </header>
+    <!-- <header-section></header-section> -->
+        <header class="container">
+            <a href="homee.html" ><figure><img id="logo_pic" src="web_pic/logo4.png" alt="tous_les_jours_logo" width="230" height="30"></figure></a>
+            <section>
+                <ul class="navbar">
+                    <li><a href="taniltsuulga.html">Танилцуулга</a></li>
+                    <li><a href="buteegdhuun.html">Бүтээгдэхүүн</a></li>
+                    <li><a href="medee.html">Мэдээ</a></li>
+                </ul>  
+            </section>
+            <section class="main">
+                <img class="cart_icon" src="web_pic/icon_cart.png" alt="cart" width="31" height="30">
+                <span class="cartItemCount js-cart-quantity" id="totalProduct">0</span>
+    
+                <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
+    
+                <article class="bx bx-menu" id="menu-icon"> </article>
+            </section>    
+        </header>   
 
         <main class="body">
-
-                    <section class="list">
+                    <list-info></list-info>
+                    <!-- <section class="list">
                         <h1>Захиалах бүтээгдэхүүн</h1>
                         <article class="stack">
                             <figure><img src="web_pic/protype_cake1.png" alt="бүтээгдэхүүн"></figure>
@@ -60,7 +64,7 @@
                             <p>Нийт үнэ</p>
                             <p>151800</p>
                         </article>
-                    </section>
+                    </section> -->
 
                     
                 
@@ -184,35 +188,7 @@
                     </section>
                     
         </main>
-
-
-        <footer>
-            <section class="social_address">
-                <address id="social_feedback">
-                <ul id="socials">
-                    <li><a href="https://www.facebook.com/TousLesJoursMongolia"><figure><img src="web_pic/logo_fb.png" alt="facebook" width="30" height="30"></figure></a></li>
-                    <li><a href="https://www.instagram.com/touslesjoursmn/"><figure><img src="web_pic/logo_ig.png" alt="instagram" width="30" height="30"></figure></a></li>
-                    <li><a href="https://twitter.com/tljmn?lang=en"><figure><img src="web_pic/logo_tw.png" alt="twitter" width="30" height="30"></figure></a></li>
-                </ul>
-                </address>
-    
-                <article id="feedback">
-                    <a href="homee.html">Хүний нөөц</a>
-                    <a href="homee.html">Санал хүсэлт</a>
-                </article>
-    
-            </section>
-            <hr>
-            <section class="address">
-                <address id="adds">
-                    <ul class="bla">
-                        <li><img src="web_pic/icons_branch.png" alt="branch" width="24" height="24"><p>Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж, Хүннү 2222 хороолол</p></li>
-                        <li><img src="web_pic/icons_mail.png" alt="mail" width="24" height="24"><p>info@tlj.mn</p></li>
-                        <li><img src="web_pic/icons_phone.png" alt="phone_num" width="24" height="24"><p>(976) 7575-7510</p></li>
-                    </ul>
-                </address>
-                <p id="text">©2022 - АРТИЗАН ХХК. БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН</p>
-        </footer>
+        <footer-section></footer-section>
 
         <script src="delivery_script.js"></script>
 </body>
