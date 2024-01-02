@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Movie Review site's Movies page.">
-    <meta name="keywords" content="Filter, Movies, Page count">
+    <meta name="description" content="Tous les jours model site.">
+    <meta name="keywords" content="Bakery, Cake, products">
     <meta name="author" content="BET">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#000000">
@@ -16,7 +16,11 @@
 
     <link rel="stylesheet" href="HF.css">
     <link rel="stylesheet" href="salbar.css">
+    <script type="module" src="./component/productCart.js"></script>
+    <script type="module" src="./component/cartinfo.js"></script>
+    <script type="module" src="./component/addedProduct.js"></script>
     <script type="module" src="./component/footerComp.js"></script>
+    <script type="module" src="./component/hurgeltComp.js"></script>
 
     <title>TOUS LES JOURS - BRANCH</title>
 </head>
@@ -37,7 +41,7 @@
 
         <section class="main">
             <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart">
-            <span class="quantity">0</span>
+            <span class="cartItemCount js-cart-quantity" id="totalProduct">0</span>
 
             <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
 

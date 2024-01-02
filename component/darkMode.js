@@ -26,7 +26,7 @@ class DarkMode extends HTMLElement {
         <section class="main">
             <!-- <i class='bx bxs-shopping-bag'></i> -->
             <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart">
-            <span class="quantity">0</span>
+            <span class="cartItemCount js-cart-quantity" id="totalProduct">0</span>
 
             <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
 

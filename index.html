@@ -12,7 +12,11 @@
     
     <link rel="stylesheet" href="home_style.css">
     <link rel="stylesheet" href="HF.css">
+    <script type="module" src="./component/productCart.js"></script>
+    <script type="module" src="./component/cartinfo.js"></script>
+    <script type="module" src="./component/addedProduct.js"></script>
     <script type="module" src="./component/footerComp.js"></script>
+    <script type="module" src="./component/hurgeltComp.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -37,27 +41,13 @@
         <section class="main">
             <!-- <i class='bx bxs-shopping-bag'></i> -->
             <img id="cart_icon" src="web_pic/icon_cart.png" alt="cart">
-            <span class="quantity">0</span>
+            <span class="cartItemCount js-cart-quantity" id="totalProduct">0</span>
 
             <a href="salbar.html" class="location"><img src="web_pic/icon_location.png" alt="location">Салбар</a>
 
             <article class="bx bx-menu" id="menu-icon"> </article>
         </section>    
     </header>
-
-
-    <!-- <nav>
-        <section class="card">
-            <h1>Сагс</h1>
-            <ul class="ListCard"></ul>
-            <article class="checkout">
-                <figure class="total">0</figure>
-                <figure class="closecard">Close</figure>
-            </article>
-        </section>
-    </nav> -->
-
-
 
     <main>
             <section class="image-container">
