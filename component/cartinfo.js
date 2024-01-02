@@ -1,76 +1,88 @@
 class Cartinfo extends HTMLElement {
-    constructor() {
-        super();
-        this.myRoot = this.attachShadow({ mode: "closed" });
-        this.productList = JSON.parse(localStorage.getItem("productList"));
-        this.#Render();
+    // constructor() {
+    //     super();
+    //     this.myRoot = this.attachShadow({ mode: "closed" });
+    //     this.productList = JSON.parse(localStorage.getItem("productList"));
+    //     this.#Render();
+    // }
+    renderAllProduct() {
+        let productList = this.myRoot.getElementById("productList");
+        if (this.productList) {
+            for (let item of this.productList) {
+                const addedPro = `<added-product name="${item.name}" price="${item.price}" img="${item.image}" count="${item.count}" ></added-product>`;
+                productList.insertAdjacentHTML('beforeend', addedPro);
+            }
+        }
     }
+    
 
     connectedCallback() {
-        this.myRoot.querySelector("button").addEventListener("click" , () => {
+        this.myRoot.querySelector("button").addEventListener("click", () => {
             this.style.display = "none";
-        }) 
-        
+        })
+
         this.myRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
-        
+
     }
 
     renderAllProduct() {
         let productList = this.myRoot.getElementById("productList");
-        for(let item of this.productList) {
-            const addedPro = `<added-product name="${item.name}" price="${item.price}" img="${item.image}" count="${item.count}" ></added-product>`;
-            productList.insertAdjacentHTML('beforeend' , addedPro);
+        if (this.productList) {
+            for (let item of this.productList) {
+                const addedPro = `<added-product name="${item.name}" price="${item.price}" img="${item.image}" count="${item.count}" ></added-product>`;
+                productList.insertAdjacentHTML('beforeend', addedPro);
+            }
         }
-        
     }
+
     addProductToCart(product) {
         let willAdd = true;
-        for(let item of this.productList) {
-            if(item?.name === product?.name) {
+        for (let item of this.productList) {
+            if (item?.name === product?.name) {
                 willAdd = false;
                 item.count += 1;
                 break;
             }
         }
-        if(willAdd) {
+        if (willAdd) {
             this.productList.push(product);
         }
-        localStorage.setItem("productList" , JSON.stringify(this.productList));
+        localStorage.setItem("productList", JSON.stringify(this.productList));
         this.#Render();
-        document.getElementById("totalProduct").innerText = this.getTotalCount();   
+        document.getElementById("totalProduct").innerText = this.getTotalCount();
         this.myRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
     }
 
     getTotalCount() {
         let totalCount = 0;
-        for(let item of this.productList) {
+        for (let item of this.productList) {
             totalCount += item.count;
         }
         return totalCount;
     }
 
-    getTotalPrice = function() {
+    getTotalPrice = function () {
         let totalPrice = 0;
-        for(let item of this.productList) {
+        for (let item of this.productList) {
             totalPrice += parseInt(item?.price) * item.count;
         }
         return totalPrice;
     }
 
-    deleteItem = function(product) {
-        for(let i = 0; i < this.productList.length ; i++) {
+    deleteItem = function (product) {
+        for (let i = 0; i < this.productList.length; i++) {
             console.log(this.productList[i].name);
-            if(this.productList[i].name === product.productName) {
-                this.productList.splice(i , 1);
+            if (this.productList[i].name === product.productName) {
+                this.productList.splice(i, 1);
             }
         }
-        localStorage.setItem("productList" , JSON.stringify(this.productList));
-        document.getElementById("totalProduct").innerText = this.getTotalCount();   
+        localStorage.setItem("productList", JSON.stringify(this.productList));
+        document.getElementById("totalProduct").innerText = this.getTotalCount();
         this.#Render();
         this.myRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
         // this.style.display = "block"; 
     }
-   
+
     #Render() {
         this.myRoot.innerHTML = `
         <div id="cart">
@@ -182,12 +194,12 @@ class Cartinfo extends HTMLElement {
         }
     </style>
          `;
-         this.myRoot.querySelector("button").addEventListener("click" , () => {
+        this.myRoot.querySelector("button").addEventListener("click", () => {
             this.style.display = "none";
-        })  
+        })
         this.renderAllProduct();
-        }
     }
+}
 
 
 window.customElements.define("test-info", Cartinfo);
