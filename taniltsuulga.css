@@ -79,6 +79,8 @@ hr{
     width: 44%;
     border-radius: 25px;
     margin-left: 20px;
+    filter: brightness(85%);
+    color: var(--text-color);
 }
 #goal-vision #vision{
     background: url('web_pic/ta_zorilgo.jpg') no-repeat center /cover;
@@ -86,6 +88,8 @@ hr{
     width: 44%;
     border-radius: 25px;
     margin-left: 8vw;
+    filter: brightness(85%);
+    color: var(--text-color);
 }
 #goal p,h3{
     padding: 0px 20px;
