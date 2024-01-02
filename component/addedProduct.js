@@ -77,6 +77,53 @@ class AddedProduct extends HTMLElement {
                     width: 30px;
                 }
             }
+
+
+            @media all and (max-width:540px){
+                *{
+                    margin:0;
+                    padding:0;
+                }
+                .cartProduct{
+                    border-radius:18px;
+                    margin: 10px;
+                    display: flex;
+                    width: 82vw;
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+                    border: #bebebe solid 1px;
+                    align-items: center;
+                    justify-content: space evenly;
+                    & img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 18px;
+                    }
+                    & button{
+                        padding: 0;
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 40px;
+                        background-color:#186049;
+                        color:white;
+                        border:none;
+                        cursor: pointer;
+                        margin-left:50px;
+                        justify-content: space-evenly;
+                    }
+                    & .item{
+                        margin-left: 20px;
+                    }
+                    & h3{
+                        width: 120px;
+                    }
+                    & p{
+                        width: 45px;
+                    }
+                    #p{
+                        width: 25px;
+                    }
+                }
+            }
             </style>
         `
     }

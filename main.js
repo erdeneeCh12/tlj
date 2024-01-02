@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelector(".cart_icon").addEventListener("click", () => {
     const cart = document.querySelector("test-info");
     cart.style.display = "block";
+
 });
 
 
@@ -194,7 +195,8 @@ moveToProductDetailPage = function(id) {
     let currentURL = window.location.href;
     const urlParams2 = new  URL(window.location.href);
     let newUrl = urlParams2.origin;
-    newUrl += `/tlj/but2.html?id=${id}`;
+    // newUrl += `/tlj/but2.html?id=${id}`;
+    newUrl += `/but2.html?id=${id}`;
     window.location.href = newUrl;
   }
 
