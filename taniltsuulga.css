@@ -136,7 +136,27 @@ hr{
     text-align: center;
 }
 
-
+@media all and (max-width:1080px){
+    #goal-vision{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        margin: 0;
+        padding: 0; 
+        & p,h3{
+            padding: 0px 20px;
+            padding-top: 45px;
+            text-align: justify;
+        }
+    }
+    #goal{
+        width: 36vw;
+    }
+    #vision{
+        width: 36vw;
+    }       
+    
+}
 
 
 @media (prefers-color-scheme: dark) {
