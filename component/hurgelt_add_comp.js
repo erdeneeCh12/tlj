@@ -44,7 +44,7 @@ class AddedProduct extends HTMLElement {
                     padding: 0 10px ;
                 }
             }
-            </style>
+        </style>
         `
     }
 }

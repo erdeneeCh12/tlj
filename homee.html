@@ -27,5 +27,23 @@
 </head>
 
 <home-with-dark-mode></home-with-dark-mode>
+<footer-section></footer-section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        if (menu) {
+            menu.addEventListener("click", () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle("open");
+            });
+        } else {
+            console.error("Element with ID 'menu-icon' not found.");
+        }
+    });
+</script>
+
 
 </html>

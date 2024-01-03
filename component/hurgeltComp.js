@@ -6,10 +6,13 @@ class ListInfo extends HTMLElement {
         this.render();
     }
 
+    //localaas unen dung haruulna 
     connectedCallback() {
         this.shadowRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
     }
 
+    //zahialah buteegdehuuni zagvaryg gargana 
+    //added hurgelt dotor dotorh buteegdehuunii html css bga
     renderAllProduct() {
         const productList = this.shadowRoot.querySelector("#productList");
         for (const item of this.productList) {
@@ -18,6 +21,7 @@ class ListInfo extends HTMLElement {
         }
     }
 
+    //niit uniin dung bodno
     getTotalPrice = function() {
         let totalPrice = 0;
         for(let item of this.productList) {
@@ -26,6 +30,7 @@ class ListInfo extends HTMLElement {
         return totalPrice;
     }
 
+    //listnii html bolon css 
     render() {
         this.shadowRoot.innerHTML = `
             <section class="list">

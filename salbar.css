@@ -122,7 +122,6 @@ button {
         grid-template-columns: auto auto;
         & h1 {grid-column-end: 3;}
         & article{width: 35vw;}
-        & img {width: 35vw;}
     } 
 }
 

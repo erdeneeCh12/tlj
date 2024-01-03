@@ -25,6 +25,17 @@ a{
     text-decoration: none;
 }
 
+button{
+    border-bottom: none;
+    border-width: 0.1px;
+}
+
+#submenu button.active {
+    background-color: var(--listback);
+    color: var(--bg-color);
+    border-left: none;
+    border-right: none;
+}
 
 
 .body{
@@ -57,7 +68,7 @@ a{
     & img {
         width: 40px;
         height: auto;
-        border-radius: 20px;
+        border-radius: 15px;
         padding: 2px 0 2px 0;
     }
     & h1 {
@@ -77,9 +88,10 @@ a{
 .sidebar{
     font-size: 18px;
     margin-top: 10rem;
+    margin-bottom: 5rem;
 
     & article  {display: flex;}
-    & article h1{
+    & article button{
         width: 13vw;
         height: 35px;
         text-align: center;
@@ -104,8 +116,7 @@ a{
         margin-bottom: 5px;
     }
 
-
-    & .info{
+    & #info{
         background-color: var(--listback);
         width: 39vw;
         height: 520px;
@@ -115,7 +126,7 @@ a{
         div {display: flex;}
     }
 
-    & .lsaddress {
+    & #lsaddress {
         background-color: var(--listback);
         width: 39vw;
         height: 520px;
@@ -124,7 +135,7 @@ a{
         & p{text-align: center;} 
     }
 
-    & .payment {
+    & #payment {
         background-color: var(--listback);
         width: 39vw;
         height: 520px;
@@ -139,10 +150,6 @@ a{
         padding: 1.5rem 4rem 0 4rem;
         /* justify-content: center; 
         align-items: center; */
-    }
-
-    & .inactive{
-        display: none;
     }
 }
 
@@ -172,7 +179,7 @@ a{
     }
     .sidebar{
         font-size: 14px;
-        margin: 10rem auto auto 0;
+        margin: 10rem auto 10rem 0;
         & article h1 {
                 height: 35px;
                 font-size: 15px;
@@ -193,7 +200,7 @@ a{
         display: grid;
         grid-template-columns: auto;
     }
-    .list{
+    #list{
         margin-top: 8rem;
         width: 350px;
     }
@@ -201,28 +208,31 @@ a{
         margin: 5rem auto 5rem auto;
         & article h1 {width: 160px;} 
         & .btn{font-size: 15px;}
-        & .info{width: 480px;}
-        & .lsaddress {width: 480px;}
-        & .payment {width: 480px;}
+        & #info{width: 480px;}
+        & #lsaddress {width: 480px;}
+        & #payment {width: 480px;}
+        & #submenu{
+            & #medee{width:160px ;} 
+            & #hayg{width:160px ;}
+            & #tolbor{width:160px ;}
+        }
     }
     
 }
 
 
 @media all and (max-width:540px){
-    .list{
-        width: 250px;
-        img {
-            width: 30px;
-            height: auto;
-            border-radius: 10px;
-        }
-    }
+    .list{width: 280px;}
     .sidebar{
         font-size: 14px;
         & article h1 {width: 115px;} 
-        & .info{width: 345px;}
-        & .lsaddress {width: 345px;}
-        & .payment {width: 345px;}
+        & #info{width: 345px;}
+        & #lsaddress {width: 345px;}
+        & #payment {width: 345px;}
+        & #submenu{
+            & #medee{width:115px ;} 
+            & #hayg{width:115px ;}
+            & #tolbor{width:115px ;}
+        }
     }
 }

@@ -1,10 +1,5 @@
 class Cartinfo extends HTMLElement {
-    // constructor() {
-    //     super();
-    //     this.myRoot = this.attachShadow({ mode: "closed" });
-    //     this.productList = JSON.parse(localStorage.getItem("productList"));
-    //     this.#Render();
-    // }
+    // baiguulaagc func ni tuhain componentyg gadnaas nevtreh bolomjgu bolgoj Render gsn func duudna
     constructor() {
         super();
         this.myRoot = this.attachShadow({ mode: "closed" });
@@ -22,46 +17,8 @@ class Cartinfo extends HTMLElement {
         
     }
 
-    // connectedCallback() {
-    //     this.myRoot.querySelector("button").addEventListener("click", () => {
-    //         this.handleOrderButtonClick();
-    //     });
-    
-    //     this.renderAllProduct();
-    // }
-    
-    // handleOrderButtonClick() {
-    //     const totalPrice = this.getTotalPrice();
-    //     this.myRoot.getElementById("totalPrice").innerText = totalPrice.toLocaleString();
-    
-    //     // Check if total price is under 15000 and show alert
-    //     if (totalPrice < 15000) {
-    //         alert("Total price is under 15000!");
-    //     } else {
-    //         // Prompt user before redirecting if total price is over 15000
-    //         const userConfirmation = confirm("Total price is over 15000. Do you want to proceed with the order?");
-    //         if (userConfirmation) {
-    //             // Redirect to "hurgelt.html" if the user confirms
-    //             window.location.href = "https://erdeneech12.github.io/tlj/hurgelt.html";
-    //         } else {
-    //             // Optionally, you can provide some feedback to the user if they choose not to proceed
-    //             alert("Order canceled. Total price is over 15000.");
-    //         }
-    //     }
-    // }
-    
-    
-    
-
-
-    // renderAllProduct() {
-    //     let productList = this.myRoot.getElementById("productList");
-    //     for(let item of this.productList) {
-    //         const addedPro = `<added-product name="${item.name}" price="${item.price}" img="${item.image}" count="${item.count}" ></added-product>`;
-    //         productList.insertAdjacentHTML('beforeend' , addedPro);
-    //     } 
-    // }
-
+    // nemegdsen buteegdehuunuudyn medeellyg renderlene
+    // buteegdehuuni html css addedproduct component dotor bga
     renderAllProduct() {
         let productList = this.myRoot.getElementById("productList");
         if (productList) {
@@ -71,7 +28,7 @@ class Cartinfo extends HTMLElement {
             }
         }
     }
-    
+     //cartan dotor buteegdehuun nemne, local shineclene
     addProductToCart(product) {
         let willAdd = true;
         for(let item of this.productList) {
@@ -90,6 +47,7 @@ class Cartinfo extends HTMLElement {
         this.myRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
     }
 
+    //buteegdehuuni too shirhegyg bodno
     getTotalCount() {
         let totalCount = 0;
         for(let item of this.productList) {
@@ -98,6 +56,7 @@ class Cartinfo extends HTMLElement {
         return totalCount;
     }
 
+    //niit uniin dung bodno 
     getTotalPrice = function() {
         let totalPrice = 0;
         for(let item of this.productList) {
@@ -106,6 +65,7 @@ class Cartinfo extends HTMLElement {
         return totalPrice;
     }
 
+    //buteegdehuunyg cartnaas hasdag heseg
     deleteItem = function(product) {
         for(let i = 0; i < this.productList.length ; i++) {
             console.log(this.productList[i].name);
@@ -120,6 +80,7 @@ class Cartinfo extends HTMLElement {
         // this.style.display = "block"; 
     }
    
+    //sagsny html butets bolon css 
     #Render() {
         this.myRoot.innerHTML = `
         <div id="cart">
@@ -134,14 +95,12 @@ class Cartinfo extends HTMLElement {
                     <!-- <button><a href="https://erdeneech12.github.io/tlj/hurgelt.html">Захиалах</a></button> -->
                     <button><a href="hurgelt.html">Захиалах</a></button>
             </div>
-            
         </div>
 
     <style scoped>
         * {
             margin: 0;
             padding: 0;
-          
         }
         a {
             color: var(--text-color);
@@ -294,12 +253,13 @@ class Cartinfo extends HTMLElement {
         }
     </style>
          `;
+
+         //haah button
          this.myRoot.querySelector("button").addEventListener("click" , () => {
             this.style.display = "none";
         })  
         this.renderAllProduct();
         }
     }
-
 
 window.customElements.define("test-info", Cartinfo);

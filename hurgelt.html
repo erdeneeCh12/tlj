@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="delivery_style.css">
     <link rel="stylesheet" href="HF.css">
-    <script type="module" src="./component/footerComp.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -66,17 +65,15 @@
                             <p>151800</p>
                         </article>
                     </section> -->
-
-                    
                 
                     <section class="sidebar" >
-                        <article>
-                            <h1>Мэдээлэл</h1>
-                            <h1>Хаяг</h1>
-                            <h1>Төлбөр</h1>
+                        <article id="submenu">
+                            <button id="medee">Мэдээлэл</button>
+                            <button id="hayg">Хаяг</button>
+                            <button id="tolbor">Төлбөр</button>
                         </article>
 
-                        <section class="info inactive">
+                        <section id="info">
                             <form  class="form" action="hurgelt.html">
                                 <p>Та мэдээллээ оруулна уу.</p>
                                 <label class="space" for="name">Харилцагчийн нэр: </label>
@@ -101,51 +98,12 @@
                                     <input class="btn " id="pass" type="submit" value="Баталгаажуулах" >
                                 </div>
                                     
-                                <input class="btn next" id="pass" type="button" value="Үргэлжлүүлэх" >
+                                <input class="btn next" id="btn_info" type="button" value="Үргэлжлүүлэх" >
                             </form>
                         </section>
 
-                        <!-- <section class="info">
-                            <form  class="form" action="hurgelt.html">
-                                <legend>-------  Та мэдээллээ оруулна уу.  -------</legend>
-                                    <p>
-                                        <label class="space" for="name">Харилцагчийн нэр: </label>
-                                        <input type="text" id="name" name="name">
-                                    </p>
     
-                                    <p>
-                                        <label class="space" for="email">Цахим шууд: </label>
-                                        <input type="email" id="email" name="email">
-                                    </p>
-                                    
-                                    <p>
-                                        <label class="space" for="phone">Утасны дугаар: </label>
-                                    <div>
-                                        <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" required>
-                                        <input class="btn" type="submit" value="Код илгээх">
-                                    </div>
-                                    </p>
-                                    
-                                    <p>
-                                        <label class="space" for="pass">Баталгаажуулах код: </label>
-                                            <div> 
-                                                <input  type="number"  name="pass" min="0" max="9">
-                                                <input  type="number"  name="pass" min="0" max="9">
-                                                <input  type="number"  name="pass" min="0" max="9">
-                                                <input  type="number"  name="pass" min="0" max="9">
-    
-                                                <input class="btn " type="submit" value="Баталгаажуулах" >
-                                            </div>
-                                    </p>
-     
-                                   <p>
-                                    <input class="btn next" type="button" value="Үргэлжлүүлэх" >
-                                   </p>
-                            </form>
-                        </section> -->
-        
-
-                        <section class="lsaddress">
+                        <section id="lsaddress">
                             <form class="form" action="hurgelt.html">
                                 <p>Хүргүүлэх хаягаа оруулна уу.</p>
                                 <label class="space" for="duureg"> Дүүрэг:</label>
@@ -160,12 +118,12 @@
                                 <label class="space" for="nemelt"> Нэмэлт:</label>
                                 <input type="textarea" id="nemelt" name="nemelt">
 
-                                <input class="btn next" id="nemelt" type="button" value="Үргэлжлүүлэх" >
+                                <input class="btn next" id="btn_add" type="button" value="Үргэлжлүүлэх" >
                             </form>
                         </section>
         
                         
-                        <section class="payment inactive">
+                        <section id="payment">
                             <form class="form" action="hurgelt.html">
                                 <p>НӨАТ авах хэлбэр</p>
                                 <label for="huvi_hun">Хувь хүн</label>
@@ -192,5 +150,6 @@
         <footer-section></footer-section>
 
         <script src="delivery_script.js"></script>
+        <script src="hurgelt.js"></script>
 </body>
 </html>

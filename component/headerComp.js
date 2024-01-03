@@ -28,7 +28,8 @@ class HeaderSection extends HTMLElement {
 
           <article class="bx bx-menu" id="menu-icon"> </article>
       </section>    
-  </header>  
+    </header>  
+
       `;
     }
   }

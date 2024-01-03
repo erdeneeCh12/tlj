@@ -13,8 +13,8 @@
 :root {
     --bg-color: #186049;
     --text-color: #fefefe;
-    --cartnoti-color:#741717;
-    
+    --cartnoti-color: #741717;
+
     --pro-color: #AD8558;
     --protext-color: #eddfca;
 
@@ -26,8 +26,8 @@
     /* dark mode  */
     --bg-color-dark: #113328;
     --text-color-dark: #969494;
-    --cartnoti-color-dark:#440f0f;
-    
+    --cartnoti-color-dark: #440f0f;
+
     --pro-color-dark: #66543f;
     --protext-color-dark: #ebb86b;
 
@@ -37,41 +37,74 @@
     --navtext-color-dark: #194134;
 }
 
-a{
+a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-
-
-main{
+main {
     max-width: 1280px;
     margin: auto;
     margin-top: 70px;
     line-height: 25px;
 }
-#introduction{
+
+#introduction {
     width: 90%;
     margin: auto;
 }
-#introduction h3{
+
+#introduction h3 {
     margin-bottom: 30px;
 }
-#introduction p{
+
+#introduction p {
     padding-top: 20px;
     text-align: justify;
 }
-hr{
+
+hr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-#goal-vision{
+
+& h3 {
+    margin: 3rem;
+    font-size: 20px;
+}
+#goal-vision {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    height: 20vh;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    & #goal {
+        background: url('web_pic/ta_alsyn_haraa.JPG') no-repeat center /cover;
+        /* float: left; */
+        width: 30vw;
+        border-radius: 25px;
+        filter: brightness(75%);
+        color: var(--text-color);
+    }
+
+    & #vision{
+        background: url('web_pic/ta_zorilgo.jpg') no-repeat center /cover;
+        /* float: right; */
+        width: 30vw;
+        border-radius: 25px;
+        filter: brightness(75%);
+        color: var(--text-color);
+    }
+}
+
+/* #goal-vision{
     display: flex;
     width: 80%;
     margin: auto;
     height: 22vw;
     color: white;
-    
 }
 #goal-vision #goal{
     background: url('web_pic/ta_alsyn_haraa.JPG') no-repeat center /cover;
@@ -105,76 +138,96 @@ hr{
 #goal-vision article:hover{
     font-size: 18px;
     box-shadow: 5px 5px rgb(214, 206, 206);
-}
+} */
 #Valuables {
-    width: 45%;
+    width: 50vw;
+    height: auto;
     margin: auto;
 }
-#Valuables h3{
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: -40px;
-}
-#val-image img{
+
+/* #Valuables h3 {
+    margin-bottom: 40px
+} */
+
+#val-image img {
     width: 100%;
     height: 100%;
 }
-#salbaruud{
+
+#salbaruud {
     margin: auto;
     width: 90%;
 }
-#salbar-figure img{
+
+#salbar-figure img {
     width: 100%;
     height: 100%;
 }
-#salbaruud h3{
+
+#salbaruud h3 {
     text-align: center;
     margin-bottom: 65px;
 }
-.h3-font{
+
+.h3-font {
     font-size: 24px;
     text-align: center;
 }
 
-@media all and (max-width:1080px){
-    #goal-vision{
+hr{
+    position: relative;
+}
+
+/* @media all and (max-width:1080px) {
+    #goal-vision {
         display: grid;
-        grid-template-columns: auto auto;
-        height: auto;
+        grid-template-columns: 50vw 50vw;
+        height: 26vw;
         margin: 0;
-        padding: 0; 
-        & p,h3{
+        padding: 0;
+
+        & p,
+        h3 {
             padding: 0px 20px;
             padding-top: 45px;
             text-align: justify;
         }
     }
-    #goal{
+
+    #goal {
         width: 36vw;
     }
-    #vision{
+
+    #vision {
         width: 36vw;
-    }       
-    
-}
+    }
+} */
 
 
 @media (prefers-color-scheme: dark) {
-    body{
+    body {
         background-color: #9b9a9a;
-        & hr{border-color: var(--nav-color-dark);}
+
+        & hr {
+            border-color: var(--nav-color-dark);
+        }
     }
-    a{color: var(--text-color-dark);}
-    img{filter: brightness(65%);} 
-    #goal-vision #goal{
+
+    a {
+        color: var(--text-color-dark);
+    }
+
+    img {
+        filter: brightness(65%);
+    }
+
+    #goal-vision #goal {
         background: url('web_pic/ta_alsyn_haraa.JPG') no-repeat center /cover;
         filter: brightness(50%);
     }
-    #goal-vision #vision{
+
+    #goal-vision #vision {
         background: url('web_pic/ta_zorilgo.jpg') no-repeat center /cover;
         filter: brightness(50%);
     }
 }
-
-
-
