@@ -92,8 +92,8 @@ class Cartinfo extends HTMLElement {
             </ul>
             <div id="price-add">
                     <p class="innerData" id="totalPrice" >0</p>
-                    <!-- <button><a href="https://erdeneech12.github.io/tlj/hurgelt.html">Захиалах</a></button> -->
-                    <button><a href="hurgelt.html">Захиалах</a></button>
+                    <button><a href="https://erdeneech12.github.io/tlj/hurgelt.html">Захиалах</a></button>
+                    // <button><a href="hurgelt.html">Захиалах</a></button>
             </div>
         </div>
 
