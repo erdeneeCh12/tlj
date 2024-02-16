@@ -12,7 +12,7 @@
     list-style: none;
 }
 
-:root {
+/* :root {
     --bg-color: #186049;
     --text-color: #fefefe;
     --cartnoti-color: #741717;
@@ -25,7 +25,7 @@
     --nav-color: #bebebe;
     --navtext-color: #0a291f;
 
-    /* dark mode  */
+    dark mode  
     --bg-color-dark: #113328;
     --text-color-dark: #969494;
     --cartnoti-color-dark: #440f0f;
@@ -37,7 +37,7 @@
     --noti-color-dark: #maroon;
     --nav-color-dark: #525252;
     --navtext-color-dark: #194134;
-}
+} */
 
 a {
     color: var(--text-color);

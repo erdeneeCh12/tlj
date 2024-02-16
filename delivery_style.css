@@ -8,17 +8,6 @@
     list-style: none;
 }
 
-:root {
-    --bg-color: #186049;
-    --text-color: #fefefe;
-    
-    --pro-color: #AD8558;
-    --protext-color: #eddfca;
-
-    --ft-color: #0a291f;
-
-    --listback: #e9e9e9;
-}
 
 a{
     color: var(--text-color);
@@ -27,7 +16,7 @@ a{
 
 button{
     border-bottom: none;
-    border-width: 0.1px;
+    border-width: 0.5px;
 }
 
 #submenu button.active {
@@ -124,7 +113,7 @@ button{
         margin-right:0;
         & p {text-align: center;}
         div {display: flex;}
-        & .bat{width: 2.3rem;}
+        /* & .bat{width: 2.3rem;} */
 
     }
 

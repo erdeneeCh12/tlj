@@ -6,10 +6,12 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.15rem;
 }
 
 :root {
-    --bg-color: #186049;
+    --bg-color: #0c4632;
     --text-color: #fefefe;
     --cartnoti-color:#741717;
     
@@ -22,7 +24,7 @@
     --navtext-color: #0a291f;
 
     /* dark mode  */
-    --bg-color-dark: #113328;
+    --bg-color-dark: #0b1b16;
     --text-color-dark: #969494;
     --cartnoti-color-dark:#440f0f;
     
@@ -445,9 +447,6 @@ a:after {
     .navbar.open {
         right: 2%;
     }
-
-
-
 
 
     /* footer */

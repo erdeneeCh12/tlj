@@ -12,7 +12,7 @@ class Cartinfo extends HTMLElement {
         this.myRoot.querySelector("button").addEventListener("click" , () => {
             this.style.display = "none";
         }) 
-        
+        //localestring n datag string bolj horvuulne.
         this.myRoot.getElementById("totalPrice").innerText = this.getTotalPrice().toLocaleString();
         
     }

@@ -213,7 +213,7 @@ moveToProductDetailPage = function(id) {
   }
 
 
-// 
+
 let tempList = JSON.parse(localStorage.getItem("productList"));
 let totalCount = 0;
 //buteegdehuun nemegdsen esehyg shalgaj toog ni tohiruulna
