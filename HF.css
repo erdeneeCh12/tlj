@@ -13,7 +13,7 @@
 :root {
     --bg-color: #0c4632;
     --text-color: #fefefe;
-    --cartnoti-color:#741717;
+    --cartnoti-color:#AD8558;
     
     --pro-color: #AD8558;
     --protext-color: #eddfca;
@@ -82,20 +82,25 @@ header {
     display: inline-block;
 }
 
-.navbar a:before,
+/* .navbar a:before,
 .navbar a:after {
     height: 2px;
     position: absolute;
     content: '';
     -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+    transition: all 0.35s ease; 
     background-color: var(--text-color);
     width: 0;
-}
+} */
 
-.navbar a:before {
+/* .navbar a:before {
     top: 0;
     left: 0;
+} */
+
+.navbar a:before,
+.navbar a:after {
+    background-color: var(--text-color);
 }
 
 .navbar a:after {

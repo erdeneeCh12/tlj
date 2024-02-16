@@ -146,6 +146,7 @@ footer {
         border-width: 2px;
         border-color: var(--nav-color);
         transition: transform 500ms;
+        font-family: 'Times New Roman', Times, serif;
 
         & div {
             display: flex;
@@ -165,11 +166,14 @@ footer {
         }
 
         & h3 {
+            font-weight: 5;
             text-align: center;
             color: var(--ft-color);
         }
 
         & p {
+            margin-top: 12px;
+            font-family: 'Times New Roman', Times, serif;
             text-align: center;
         }
     }
