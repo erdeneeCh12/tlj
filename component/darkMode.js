@@ -140,17 +140,8 @@ class DarkMode extends HTMLElement {
             --navtext-color: #0a291f;
         
             /* dark mode  */
-            --bg-color-dark: #113328;
-            --text-color-dark: #969494;
-            --cartnoti-color-dark:#440f0f;
+            --bg-color-dark: black;
             
-            --pro-color-dark: #66543f;
-            --protext-color-dark: #7a5d32;
-        
-            --ft-color-dark: #000000;
-            --noti-color-dark: #maroon;
-            --nav-color-dark: #525252;
-            --navtext-color-dark: #194134;
         }
         @media (prefers-color-scheme: dark) {
             body{

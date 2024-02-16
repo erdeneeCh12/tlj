@@ -24,17 +24,7 @@
     --navtext-color: #0a291f;
 
     /* dark mode  */
-    --bg-color-dark: #0b1b16;
-    --text-color-dark: #969494;
-    --cartnoti-color-dark:#440f0f;
-    
-    --pro-color-dark: #66543f;
-    --protext-color-dark: #ebb86b;
-
-    --ft-color-dark: #000000;
-    --noti-color-dark: #maroon;
-    --nav-color-dark: #525252;
-    --navtext-color-dark: #194134;
+    --bg-color-dark: black;
 }
 
 a {
