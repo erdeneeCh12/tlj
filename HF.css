@@ -23,8 +23,11 @@
     --nav-color: #bebebe;
     --navtext-color: #0a291f;
 
+    --listback:#bebebe;
+
     /* dark mode  */
     --bg-color-dark: black;
+    --text-color-dark: #9c9c9c;
 }
 
 a {
@@ -538,19 +541,5 @@ a:after {
         & .navbar .current a {color: var(--text-color-dark);}
         & .navbar a:before {background-color: var(--text-color-dark);}
         & .navbar a:after {background-color: var(--text-color-dark);}
-        & .main {
-            & span{
-                background-color: var(--cartnoti-color-dark);
-                color: var(--text-color-dark);}
-            & a{color: var(--text-color-dark);}
-        }
-    }
-    footer{
-        background-color:var(--ft-color-dark);
-        color: var(--text-color-dark);
-        & a:after{background-color: var(--pro-color-dark);}
-        & #feedback a:hover{color:var(--pro-color-dark);}
-        & #socials li a:hover{color: var(--pro-color);}
-        & #feedback a{color: var(--text-color-dark);}
     }
 }

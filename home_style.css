@@ -439,3 +439,35 @@ button{
         & p{color: var(--text-color-dark);}
     }
 }
+
+
+/* <style scope>
+    :root {
+        --bg-color: #186049;
+        --text-color: #fefefe;
+        --cartnoti-color:#741717;
+        
+        --pro-color: #AD8558;
+        --protext-color: #eddfca;
+    
+        --ft-color: #0a291f;
+        --noti-color: #red;
+        --nav-color: #bebebe;
+        --navtext-color: #0a291f;
+    
+        dark mode 
+        --bg-color-dark: black;
+        --text-color-dark: #9c9c9c;
+        
+    }
+    @media (prefers-color-scheme: dark) {
+        header{
+            background-color: var(--bg-color-dark);
+            & .navbar a{color: var(--text-color-dark);}
+            & .navbar a:hover {color: var(--text-color-dark);}
+            & .navbar .current a {color: var(--text-color-dark);}
+            & .navbar a:before {background-color: var(--text-color-dark);}
+            & .navbar a:after {background-color: var(--text-color-dark);}
+        }
+    }
+</style> */

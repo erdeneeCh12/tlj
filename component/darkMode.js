@@ -123,56 +123,12 @@ class DarkMode extends HTMLElement {
         </section>
     </main>
 
-</body>
-
-        <style scope>
-        :root {
-            --bg-color: #186049;
-            --text-color: #fefefe;
-            --cartnoti-color:#741717;
-            
-            --pro-color: #AD8558;
-            --protext-color: #eddfca;
-        
-            --ft-color: #0a291f;
-            --noti-color: #red;
-            --nav-color: #bebebe;
-            --navtext-color: #0a291f;
-        
-            /* dark mode  */
-            --bg-color-dark: black;
-            
-        }
-        @media (prefers-color-scheme: dark) {
-            body{
-                background-color: #9b9a9a;
-                & hr{border-color: var(--nav-color-dark);}
-                & .about{background-color: #9b9a9a;}
-                & .news{background-color: #9b9a9a;}
-                & .product{
-                    background-color: var(--pro-color-dark);
-                    color: var(--text-color-dark);
-                    & a h2{color: var(--text-color-dark);}
-                    & article:after{background-color: var(--text-color-dark); }
-                }
-            }
-            a{color: var(--text-color-dark);}
-            img{filter: brightness(65%);} 
-            button {
-                background-color: var(--bg-color-dark);
-                color: var(--text-color-dark);
-                border-color: #9b9a9a;
-            }
-            .image-container {
-                background: url('web_pic/backimg.jpg') center/cover no-repeat;
-                filter: brightness(65%);
-                & h1{color: var(--text-color-dark);}
-                & p{color: var(--text-color-dark);}
-            }
-        } 
-        </style>
+</body>  
         `
     }
 }
 
 window.customElements.define('home-with-dark-mode', DarkMode);
+
+
+
