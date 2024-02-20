@@ -412,7 +412,7 @@ button{
     }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body{
         background-color: #9b9a9a;
         & hr{border-color: var(--nav-color-dark);}
@@ -438,7 +438,7 @@ button{
         & h1{color: var(--text-color-dark);}
         & p{color: var(--text-color-dark);}
     }
-}
+} */
 
 
 /* <style scope>
